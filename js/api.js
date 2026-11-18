@@ -36,7 +36,9 @@ export const createContent =(data) =>
 
 
 export const updateContent =(id ,data)=>
-    request(`/contents/${id}`, { method: "PUT", body: JSON.stringify(data) });
+       request(`/contents/${id}`, { method: "PUT", body: JSON.stringify(data) });
+
+
 
 
 export const deleteContent = (id) => 
