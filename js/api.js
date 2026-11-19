@@ -29,7 +29,7 @@ if (!istijabaDylData.ok) throw new Error(`Erreur ${istijabaDylData.status}`);
 return istijabaDylData.json();
 }
 
-export const getContents = () => request("/contents")
+export const jibContent = () => request("/contents")
 
 export const createContent =(data) => 
     request("/contents", { method: "POST", body: JSON.stringify(data) });
