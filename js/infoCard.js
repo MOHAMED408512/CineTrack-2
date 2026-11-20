@@ -33,8 +33,9 @@ export function openModel(card) {
      <p> Pays : ${card.productionCountries.join(", ")}</p>
      <p class ="mt-3">${card.description}</p>
 
+    
 
-     <hr class ="my-4">
+     <div class ="my-4"></div>
      <h3 class ="text-xl font-bold mb-2">Commentaires</h3>
      <div id ="commentsLoader" class ="hidden font-bold"></div>
      <div id ="commentsList" class ="flex flex-col gap-2 mb-4"></div>

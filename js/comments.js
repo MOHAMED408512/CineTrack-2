@@ -48,7 +48,7 @@ authorInput.value = localStorage.getItem("pseudo") || ""
 
 
 
-// load comments
+// load comments    chatgement ktbqa tal3a hta ktwli hidden
 
 commentLoader.textContent ="Chargement..."
 commentLoader.classList.remove("hidden")
