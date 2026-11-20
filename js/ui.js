@@ -11,7 +11,7 @@ textLiRyban.classList.remove("hidden")
 // hide loading text li ryba,
 
 export function hideLoading (textLiRyban) {
-    textLiRyban.class.classList.add("hidden")
+    textLiRyban.classList.add("hidden")
 }
 
 
@@ -21,7 +21,7 @@ export function showMessage (textLiRyban , text , type = "error") {
          textLiRyban.textContent=text
 
 
-         if ( type === " succes ") {
+         if ( type === "succes") {
             textLiRyban.className = " bg-green-600 text-white p-4 rounded m-4"
          
          }else {

@@ -26,7 +26,7 @@
 </header>
 
 
-<main class ="pr-80">
+<main>
 
     <!--loading text li rayban  -->
 
@@ -35,6 +35,51 @@
     <!-- suuces wla erroe -->
 
     <div id ="messageLirayban" class="hidden"></div>
+
+
+<form id ="filmForm" class ="bg-purple-100 p-4 rounded mb-4 flex flex-col gap-2">
+    <h2 id ="formTitle" class="text-lg font-bold">Ajouter un titre</h2>
+    <input id="title" type="text" placeholder="Titre" class="p-2 rounded bg-white">
+
+    <p id ="error-title" class ="text-red-600 text-sm"></p>
+    <select id ="type" class ="p-2 rounded bg-white">
+        <option value ="">Choisir le type</option>
+        <option value ="movie">Film</option>
+        <option value ="series">Series</option>
+    </select>
+
+<p id="error-type" class="text-red-600 text-sm"></p>
+
+<input id="releaseYear" type="number" placeholder="Annee" class="p-2 rounded bg-white">
+<p id ="error-releaseYear" class ="text-red-600 text-sm"></p>
+
+<input id="image" type="text" placeholder="URL de l'image" class="p-2 rounded bg-white">
+  <p id="error-image" class="text-red-600 text-sm"></p>
+
+
+   <input id="duration" type="number" placeholder="Durée en minutes (film)" class="p-2 rounded bg-white">
+      <p id="error-duration" class="text-red-600 text-sm"></p>
+
+
+
+    <input id="seasons" type="number" placeholder="Nombre de saisons (série)" class="p-2 rounded bg-white">
+  <p id="error-seasons" class="text-red-600 text-sm"></p>
+
+
+<input id ="genres" type ="text" placeholder="Genres separes par des virgules" class ="p-2 rounded bg-white">
+
+<input id ="directors" type ="text" placeholder="Realisateurs separes par des virgules" class ="p-2 rounded bg-white">
+
+<input id ="productionCountries" type ="text" placeholder="pays separes par des virgules" class ="p-2 rounded bg-white">
+<textarea id ="description" placeholder="description" class="p-2 rounded bg-white"></textarea>
+
+<!-- lesbutona  submit and  butona cancel -->
+<div class="flex gap-2">
+    <button type="submit" id ="submitBotona" class ="bg-purple"
+</div>
+
+</form>
+
 
     <!-- titles -->
      <div class ="grid grid-cols-5 gap-2 bg-purple-400 text-white rounded p-2 font-bold text-center">
@@ -52,6 +97,7 @@
 
 
 
+<script type="module" src="./js/admin.js"></script>
 
     
 </body>

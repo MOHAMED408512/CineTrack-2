@@ -1,5 +1,5 @@
-import { jibContent , deleteContent } from "./api";
-import { showLoading , hideLoading ,showMessage } from "./ui";
+import { jibContent , deleteContent } from "./api.js";
+import { showLoading , hideLoading ,showMessage } from "./ui.js";
 
 
 
@@ -33,7 +33,7 @@ return `
 <div>${film.releaseYear}</div>
 <div>
 <button data-edit ="${film.id}" class ="bg-purple-500 text-white px-3 py-1 rounded">Modifier</button>
-<button data-delete ="${film.id} class ="bg-red-500 text-white px-3 py-1 rounded">Supprimer</button>
+<button data-delete ="${film.id}" class ="bg-red-500 text-white px-3 py-1 rounded">Supprimer</button>
 </div>
 </div>`
 
@@ -67,7 +67,7 @@ async function loadFilms() {
     }
 }
 
-// 5dmt b delegation le chr7o lbnat f event listener
+// 5dmt b delegation  f event listener
 
 tableBody.addEventListener("click" , async (event) =>{
 
@@ -93,7 +93,16 @@ if (!confirm (`Supprimer ${lfilmLebrenaYtsuprema.title} ? `)) return
 try {
     await deleteContent(id)
 films = films.filter(lfilmlerytsuprema => lfilmlerytsuprema.id !== id)
+drawRows(films)
+showMessage( messageLiryban , "Titre est supprime avec succes" , "succes")
 
+
+
+}catch (error) {
+    showMessage (messageLiryban ,"Erreur lors de la suppression")
 }
 
 })
+
+
+loadFilms()

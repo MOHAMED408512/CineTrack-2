@@ -6,7 +6,7 @@ export async function jibMovietSeries() {
     const istijabaDylData = await fetch(API_URL);
 
     if (!istijabaDylData.ok) {
-      console("Erreur lors du chargement des données");
+      console.error("Erreur lors du chargement des données");
     }
 
     const data = await istijabaDylData.json();
@@ -42,7 +42,7 @@ export const updateContent =(id ,data)=>
 
 
 export const deleteContent = (id) => 
-        request(`/contents/${id}`, { method: "DELETE", body: JSON.stringify(data) });
+        request(`/contents/${id}`, { method: "DELETE" });
  
 
 export const getCommments = () => request("/comments")
