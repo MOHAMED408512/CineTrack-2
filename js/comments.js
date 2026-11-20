@@ -10,7 +10,7 @@ function DirComments (list , container) {
 
     container.innerHTML = list.map ( c => `
         <div class ="bg-purple-700 rounded p-2">
-        <p class ="font-bold">${c.author}
+        <p class ="font-bold text-white ">${c.author} -
         <span class ="text-xs font-bold">${new Date(c.createdAt).toLocaleDateString()}</span>
         </p>
         <p>${c.text}</p>
