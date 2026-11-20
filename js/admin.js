@@ -303,8 +303,8 @@ return `
 <div>${typeText}</div>
 <div>${film.releaseYear}</div>
 <div>
-<button data-edit ="${film.id}" class ="bg-purple-500 text-white px-3 py-1 rounded">Modifier</button>
-<button data-delete ="${film.id}" class ="bg-red-500 text-white px-3 py-1 rounded">Supprimer</button>
+<button data-edit ="${film.id}" class ="bg-purple-500 text-white px-2 py-1 rounded mb-2 mt-2">Modifier</button>
+<button data-delete ="${film.id}" class ="bg-red-500 text-white px-2 py-1 rounded mb-2 mt-2">Supprimer</button>
 </div>
 </div>`
 
