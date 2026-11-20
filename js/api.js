@@ -45,7 +45,7 @@ export const deleteContent = (id) =>
         request(`/contents/${id}`, { method: "DELETE" });
  
 
-export const getCommments = () => request("/comments")
+export const getComments = () => request("/comments")
 export const createComment = (data) => 
     request("/comments" , {method  : "POST" , body : JSON.stringify(data)})
     

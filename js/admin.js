@@ -52,6 +52,11 @@ function faxykunMovieDisabled () {
         durationInput.value = ""
 
     
+}else {
+    
+    // tahaj ma chosen both dusabled
+durationInput.disabled= true
+seasonsInput.disabled = true
 }}
 
 typeInput.addEventListener("change" , faxykunMovieDisabled)
