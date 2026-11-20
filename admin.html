@@ -37,6 +37,13 @@
     <div id ="messageLirayban" class="hidden"></div>
 
 
+
+
+
+
+
+    
+
 <form id ="filmForm" class ="bg-purple-100 p-4 rounded mb-4 flex flex-col gap-2">
     <h2 id ="formTitle" class="text-lg font-bold">Ajouter un titre</h2>
     <input id="title" type="text" placeholder="Titre" class="p-2 rounded bg-white">
@@ -57,12 +64,12 @@
   <p id="error-image" class="text-red-600 text-sm"></p>
 
 
-   <input id="duration" type="number" placeholder="Durée en minutes (film)" class="p-2 rounded bg-white">
+   <input id="duration" type="number" placeholder="Durée en minutes (film)" class="p-2 rounded bg-white disabled:opacity-50 disabled:cursor-not-allowed">
       <p id="error-duration" class="text-red-600 text-sm"></p>
 
 
 
-    <input id="seasons" type="number" placeholder="Nombre de saisons (série)" class="p-2 rounded bg-white">
+    <input id="seasons" type="number" placeholder="Nombre de saisons (série)" class="p-2 rounded bg-white disabled:opacity-50 disabled:cursor-not-allowed">
   <p id="error-seasons" class="text-red-600 text-sm"></p>
 
 
@@ -75,10 +82,14 @@
 
 <!-- lesbutona  submit and  butona cancel -->
 <div class="flex gap-2">
-    <button type="submit" id ="submitBotona" class ="bg-purple"
+    <button type="submit" id ="submitBotona" class ="bg-purple-700 text-white px-4 py-2 rounded font-bold">Ajouter</button>
+    <button type ="button" id="cancelBotona" class ="hidden bg-blue-500 text-white px-4 py-2 rounded font-bold">Annuler</button>
 </div>
 
 </form>
+
+
+
 
 
     <!-- titles -->

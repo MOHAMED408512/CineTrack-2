@@ -1,8 +1,8 @@
-export function showLoading (textLiRyban , text = "Chargement..") {
-    textLiRyban.textContent = text  
+export function showLoading(textLiRyban) {
+  textLiRyban.textContent = "Chargement..."
+    textLiRyban.classList.remove("hidden")
 
 
-textLiRyban.classList.remove("hidden")
 
 }
 
@@ -21,7 +21,7 @@ export function showMessage (textLiRyban , text , type = "error") {
          textLiRyban.textContent=text
 
 
-         if ( type === "succes") {
+         if ( type === "success") {
             textLiRyban.className = " bg-green-600 text-white p-4 rounded m-4"
          
          }else {
